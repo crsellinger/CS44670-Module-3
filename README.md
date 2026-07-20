@@ -28,6 +28,8 @@ Links:
 - [Example Notebook](notebooks/ml_03_case.ipynb)
 - [Project Notebook](notebooks/Custom-Project.ipynb)
 
+- [Jupyter Notebook Webpage](notebooks/Custom-Project.html)
+
 ## Working Files
 
 You'll work with these areas:
