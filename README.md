@@ -26,7 +26,7 @@ See [docs/your-files.md] for more.
 Links:
 
 - [Example Notebook](notebooks/ml_03_case.ipynb)
-- [Project Notebook](notebooks/Custom-Project.ipynb)
+- [Project Notebook](notebooks/Custom-Project.html)
 
 ## Working Files
 
