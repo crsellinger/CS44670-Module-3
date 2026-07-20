@@ -25,7 +25,8 @@ See [docs/your-files.md] for more.
 
 Links:
 
-- [ml_03_case.ipynb](notebooks/ml_03_case.ipynb)
+- [Example Notebook](notebooks/ml_03_case.ipynb)
+- [Project Notebook](notebooks/Custom-Project.ipynb)
 
 ## Working Files
 
@@ -85,7 +86,7 @@ open a machine terminal in your `Repos` folder:
 
 git clone https://github.com/crsellinger/CS44670-Module-3.git
 
-cd ml-03-classification
+cd CS44670-Module-3
 code .
 ```
 

@@ -1567,3 +1567,664 @@ weighted avg       0.75      0.74      0.73       137
 2026-07-20 13:46:10 | INFO | M03 | Features:  ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g']
 2026-07-20 13:46:10 | INFO | M03 | Model:     DecisionTreeClassifier(max_depth=4)
 2026-07-20 13:46:10 | INFO | M03 | ========================
+2026-07-20 15:17:46 | INFO | ML | === RUN START ===
+2026-07-20 15:17:46 | INFO | ML | project=ML
+2026-07-20 15:17:46 | INFO | ML | repo_dir=CS44670-Module-3
+2026-07-20 15:17:46 | INFO | ML | python=3.14.6
+2026-07-20 15:17:46 | INFO | ML | os=Windows 11
+2026-07-20 15:17:46 | INFO | ML | shell=powershell
+2026-07-20 15:17:46 | INFO | ML | cwd=.
+2026-07-20 15:17:46 | INFO | ML | github_actions=False
+2026-07-20 15:18:14 | INFO | __main__ | === RUN START ===
+2026-07-20 15:18:14 | INFO | __main__ | project=Custom Project: Environment Setup
+2026-07-20 15:18:14 | INFO | __main__ | repo_dir=CS44670-Module-3
+2026-07-20 15:18:14 | INFO | __main__ | python=3.14.6
+2026-07-20 15:18:14 | INFO | __main__ | os=Windows 11
+2026-07-20 15:18:14 | INFO | __main__ | shell=powershell
+2026-07-20 15:18:14 | INFO | __main__ | cwd=notebooks
+2026-07-20 15:18:14 | INFO | __main__ | github_actions=False
+2026-07-20 15:18:14 | INFO | __main__ | Confirming installation:
+2026-07-20 15:18:14 | INFO | __main__ |   python:       3.14.6
+2026-07-20 15:18:14 | INFO | __main__ |   pandas:       3.0.3
+2026-07-20 15:18:14 | INFO | __main__ |   numpy:        2.5.1
+2026-07-20 15:18:14 | INFO | __main__ |   scikit-learn: 1.9.0
+2026-07-20 15:18:14 | INFO | __main__ |   matplotlib:   3.11.0
+2026-07-20 15:18:19 | INFO | __main__ | Loading datasets from KaggleHub...
+2026-07-20 15:18:20 | INFO | __main__ | Loaded datasets: fab_capacity.csv and ai_chip_market.csv
+2026-07-20 15:18:20 | INFO | __main__ | Loaded: 313 rows and 7 columns from fab_capacity.csv
+2026-07-20 15:18:20 | INFO | __main__ | Loaded: 120 rows and 11 columns from ai_chip_market.csv
+2026-07-20 15:18:24 | INFO | __main__ | The intended target is 'monthly_wafer_capacity'.
+2026-07-20 15:18:24 | INFO | __main__ | Any feature derived FROM the target would leak the answer. Avoid those.
+2026-07-20 15:18:24 | INFO | __main__ | Per-column completeness and type:
+2026-07-20 15:18:24 | INFO | __main__ |   year                 int64      present=100.0%  missing=0
+2026-07-20 15:18:24 | INFO | __main__ |   company              str        present=100.0%  missing=0
+2026-07-20 15:18:24 | INFO | __main__ |   country_iso3         str        present=100.0%  missing=0
+2026-07-20 15:18:24 | INFO | __main__ |   process_node_nm      int64      present=100.0%  missing=0
+2026-07-20 15:18:24 | INFO | __main__ |   fab_type             str        present=100.0%  missing=0
+2026-07-20 15:18:24 | INFO | __main__ |   monthly_wafer_capacity int64      present=100.0%  missing=0
+2026-07-20 15:18:24 | INFO | __main__ |   fab_started_year     int64      present=100.0%  missing=0
+2026-07-20 15:18:24 | INFO | __main__ | Numeric summary (for spread / outliers):
+2026-07-20 15:18:29 | INFO | __main__ | Constructing features (vectorized, none are derived from the target)
+2026-07-20 15:18:29 | INFO | __main__ | Added features: ['fab_size', 'process_node_category']
+2026-07-20 15:39:45 | INFO | __main__ | === RUN START ===
+2026-07-20 15:39:45 | INFO | __main__ | project=Custom Project: Environment Setup
+2026-07-20 15:39:45 | INFO | __main__ | repo_dir=CS44670-Module-3
+2026-07-20 15:39:45 | INFO | __main__ | python=3.14.6
+2026-07-20 15:39:45 | INFO | __main__ | os=Windows 11
+2026-07-20 15:39:45 | INFO | __main__ | shell=powershell
+2026-07-20 15:39:45 | INFO | __main__ | cwd=notebooks
+2026-07-20 15:39:45 | INFO | __main__ | github_actions=False
+2026-07-20 15:39:45 | INFO | __main__ | Confirming installation:
+2026-07-20 15:39:45 | INFO | __main__ |   python:       3.14.6
+2026-07-20 15:39:45 | INFO | __main__ |   pandas:       3.0.3
+2026-07-20 15:39:45 | INFO | __main__ |   numpy:        2.5.1
+2026-07-20 15:40:02 | INFO | __main__ | === RUN START ===
+2026-07-20 15:40:02 | INFO | __main__ | project=Custom Project: Environment Setup
+2026-07-20 15:40:02 | INFO | __main__ | repo_dir=CS44670-Module-3
+2026-07-20 15:40:02 | INFO | __main__ | python=3.14.6
+2026-07-20 15:40:02 | INFO | __main__ | os=Windows 11
+2026-07-20 15:40:02 | INFO | __main__ | shell=powershell
+2026-07-20 15:40:02 | INFO | __main__ | cwd=notebooks
+2026-07-20 15:40:02 | INFO | __main__ | github_actions=False
+2026-07-20 15:40:02 | INFO | __main__ | Confirming installation:
+2026-07-20 15:40:02 | INFO | __main__ |   python:       3.14.6
+2026-07-20 15:40:02 | INFO | __main__ |   pandas:       3.0.3
+2026-07-20 15:40:02 | INFO | __main__ |   numpy:        2.5.1
+2026-07-20 15:40:02 | INFO | __main__ |   scikit-learn: 1.9.0
+2026-07-20 15:40:02 | INFO | __main__ |   matplotlib:   3.11.0
+2026-07-20 15:41:09 | INFO | __main__ | === RUN START ===
+2026-07-20 15:41:09 | INFO | __main__ | project=Custom Project: Environment Setup
+2026-07-20 15:41:09 | INFO | __main__ | repo_dir=CS44670-Module-3
+2026-07-20 15:41:09 | INFO | __main__ | python=3.14.6
+2026-07-20 15:41:09 | INFO | __main__ | os=Windows 11
+2026-07-20 15:41:09 | INFO | __main__ | shell=powershell
+2026-07-20 15:41:09 | INFO | __main__ | cwd=notebooks
+2026-07-20 15:41:09 | INFO | __main__ | github_actions=False
+2026-07-20 15:41:09 | INFO | __main__ | Confirming installation:
+2026-07-20 15:41:09 | INFO | __main__ |   python:       3.14.6
+2026-07-20 15:41:09 | INFO | __main__ |   pandas:       3.0.3
+2026-07-20 15:41:09 | INFO | __main__ |   numpy:        2.5.1
+2026-07-20 15:41:09 | INFO | __main__ |   scikit-learn: 1.9.0
+2026-07-20 15:41:09 | INFO | __main__ |   matplotlib:   3.11.0
+2026-07-20 15:41:09 | INFO | __main__ | Loading datasets from KaggleHub...
+2026-07-20 15:41:09 | INFO | __main__ | Loaded datasets: fab_capacity.csv and ai_chip_market.csv
+2026-07-20 15:41:09 | INFO | __main__ | Loaded: 313 rows and 7 columns from fab_capacity.csv
+2026-07-20 15:41:09 | INFO | __main__ | Loaded: 120 rows and 11 columns from ai_chip_market.csv
+2026-07-20 15:41:09 | INFO | __main__ | The intended target is 'monthly_wafer_capacity'.
+2026-07-20 15:41:09 | INFO | __main__ | Any feature derived FROM the target would leak the answer. Avoid those.
+2026-07-20 15:41:09 | INFO | __main__ | Per-column completeness and type:
+2026-07-20 15:41:09 | INFO | __main__ |   year                 int64      present=100.0%  missing=0
+2026-07-20 15:41:09 | INFO | __main__ |   company              str        present=100.0%  missing=0
+2026-07-20 15:41:09 | INFO | __main__ |   country_iso3         str        present=100.0%  missing=0
+2026-07-20 15:41:09 | INFO | __main__ |   process_node_nm      int64      present=100.0%  missing=0
+2026-07-20 15:41:09 | INFO | __main__ |   fab_type             str        present=100.0%  missing=0
+2026-07-20 15:41:09 | INFO | __main__ |   monthly_wafer_capacity int64      present=100.0%  missing=0
+2026-07-20 15:41:09 | INFO | __main__ |   fab_started_year     int64      present=100.0%  missing=0
+2026-07-20 15:41:09 | INFO | __main__ | Numeric summary (for spread / outliers):
+2026-07-20 15:41:09 | INFO | __main__ | Constructing features (vectorized, none are derived from the target)
+2026-07-20 15:41:09 | INFO | __main__ | Added features: ['fab_size', 'process_node_category']
+2026-07-20 15:45:08 | INFO | __main__ | === RUN START ===
+2026-07-20 15:45:08 | INFO | __main__ | project=Custom Project: Environment Setup
+2026-07-20 15:45:08 | INFO | __main__ | repo_dir=CS44670-Module-3
+2026-07-20 15:45:08 | INFO | __main__ | python=3.14.6
+2026-07-20 15:45:08 | INFO | __main__ | os=Windows 11
+2026-07-20 15:45:08 | INFO | __main__ | shell=powershell
+2026-07-20 15:45:08 | INFO | __main__ | cwd=notebooks
+2026-07-20 15:45:08 | INFO | __main__ | github_actions=False
+2026-07-20 15:45:08 | INFO | __main__ | Confirming installation:
+2026-07-20 15:45:08 | INFO | __main__ |   python:       3.14.6
+2026-07-20 15:45:08 | INFO | __main__ |   pandas:       3.0.3
+2026-07-20 15:45:08 | INFO | __main__ |   numpy:        2.5.1
+2026-07-20 15:45:08 | INFO | __main__ |   scikit-learn: 1.9.0
+2026-07-20 15:45:08 | INFO | __main__ |   matplotlib:   3.11.0
+2026-07-20 15:45:08 | INFO | __main__ | Loading datasets from KaggleHub...
+2026-07-20 15:45:08 | INFO | __main__ | Loaded datasets: fab_capacity.csv and ai_chip_market.csv
+2026-07-20 15:45:08 | INFO | __main__ | Loaded: 313 rows and 7 columns from fab_capacity.csv
+2026-07-20 15:45:08 | INFO | __main__ | Loaded: 120 rows and 11 columns from ai_chip_market.csv
+2026-07-20 15:45:08 | INFO | __main__ | The intended target is 'monthly_wafer_capacity'.
+2026-07-20 15:45:08 | INFO | __main__ | Any feature derived FROM the target would leak the answer. Avoid those.
+2026-07-20 15:45:08 | INFO | __main__ | Per-column completeness and type:
+2026-07-20 15:45:08 | INFO | __main__ |   year                 int64      present=100.0%  missing=0
+2026-07-20 15:45:08 | INFO | __main__ |   company              str        present=100.0%  missing=0
+2026-07-20 15:45:08 | INFO | __main__ |   country_iso3         str        present=100.0%  missing=0
+2026-07-20 15:45:08 | INFO | __main__ |   process_node_nm      int64      present=100.0%  missing=0
+2026-07-20 15:45:08 | INFO | __main__ |   fab_type             str        present=100.0%  missing=0
+2026-07-20 15:45:08 | INFO | __main__ |   monthly_wafer_capacity int64      present=100.0%  missing=0
+2026-07-20 15:45:08 | INFO | __main__ |   fab_started_year     int64      present=100.0%  missing=0
+2026-07-20 15:45:08 | INFO | __main__ | Numeric summary (for spread / outliers):
+2026-07-20 15:45:08 | INFO | __main__ | Constructing features (vectorized, none are derived from the target)
+2026-07-20 15:45:08 | INFO | __main__ | Added features: ['fab_size', 'process_node_category']
+2026-07-20 15:46:17 | INFO | __main__ | === RUN START ===
+2026-07-20 15:46:17 | INFO | __main__ | project=Custom Project: Environment Setup
+2026-07-20 15:46:17 | INFO | __main__ | repo_dir=CS44670-Module-3
+2026-07-20 15:46:17 | INFO | __main__ | python=3.14.6
+2026-07-20 15:46:17 | INFO | __main__ | os=Windows 11
+2026-07-20 15:46:17 | INFO | __main__ | shell=powershell
+2026-07-20 15:46:17 | INFO | __main__ | cwd=notebooks
+2026-07-20 15:46:17 | INFO | __main__ | github_actions=False
+2026-07-20 15:46:17 | INFO | __main__ | Confirming installation:
+2026-07-20 15:46:17 | INFO | __main__ |   python:       3.14.6
+2026-07-20 15:46:17 | INFO | __main__ |   pandas:       3.0.3
+2026-07-20 15:46:17 | INFO | __main__ |   numpy:        2.5.1
+2026-07-20 15:46:17 | INFO | __main__ |   scikit-learn: 1.9.0
+2026-07-20 15:46:17 | INFO | __main__ |   matplotlib:   3.11.0
+2026-07-20 15:46:17 | INFO | __main__ | Loading datasets from KaggleHub...
+2026-07-20 15:46:17 | INFO | __main__ | Loaded datasets: fab_capacity.csv and ai_chip_market.csv
+2026-07-20 15:46:17 | INFO | __main__ | Loaded: 313 rows and 7 columns from fab_capacity.csv
+2026-07-20 15:46:17 | INFO | __main__ | Loaded: 120 rows and 11 columns from ai_chip_market.csv
+2026-07-20 15:46:17 | INFO | __main__ | The intended target is 'monthly_wafer_capacity'.
+2026-07-20 15:46:17 | INFO | __main__ | Any feature derived FROM the target would leak the answer. Avoid those.
+2026-07-20 15:46:17 | INFO | __main__ | Per-column completeness and type:
+2026-07-20 15:46:17 | INFO | __main__ |   year                 int64      present=100.0%  missing=0
+2026-07-20 15:46:17 | INFO | __main__ |   company              str        present=100.0%  missing=0
+2026-07-20 15:46:17 | INFO | __main__ |   country_iso3         str        present=100.0%  missing=0
+2026-07-20 15:46:17 | INFO | __main__ |   process_node_nm      int64      present=100.0%  missing=0
+2026-07-20 15:46:17 | INFO | __main__ |   fab_type             str        present=100.0%  missing=0
+2026-07-20 15:46:17 | INFO | __main__ |   monthly_wafer_capacity int64      present=100.0%  missing=0
+2026-07-20 15:46:17 | INFO | __main__ |   fab_started_year     int64      present=100.0%  missing=0
+2026-07-20 15:46:17 | INFO | __main__ | Numeric summary (for spread / outliers):
+2026-07-20 15:46:17 | INFO | __main__ | Constructing features (vectorized, none are derived from the target)
+2026-07-20 15:46:17 | INFO | __main__ | Added features: ['fab_size', 'process_node_category']
+2026-07-20 15:48:52 | INFO | __main__ | === RUN START ===
+2026-07-20 15:48:52 | INFO | __main__ | project=Custom Project: Environment Setup
+2026-07-20 15:48:52 | INFO | __main__ | repo_dir=CS44670-Module-3
+2026-07-20 15:48:52 | INFO | __main__ | python=3.14.6
+2026-07-20 15:48:52 | INFO | __main__ | os=Windows 11
+2026-07-20 15:48:52 | INFO | __main__ | shell=powershell
+2026-07-20 15:48:52 | INFO | __main__ | cwd=notebooks
+2026-07-20 15:48:52 | INFO | __main__ | github_actions=False
+2026-07-20 15:48:52 | INFO | __main__ | Confirming installation:
+2026-07-20 15:48:52 | INFO | __main__ |   python:       3.14.6
+2026-07-20 15:48:52 | INFO | __main__ |   pandas:       3.0.3
+2026-07-20 15:48:52 | INFO | __main__ |   numpy:        2.5.1
+2026-07-20 15:48:52 | INFO | __main__ |   scikit-learn: 1.9.0
+2026-07-20 15:48:52 | INFO | __main__ |   matplotlib:   3.11.0
+2026-07-20 15:48:52 | INFO | __main__ | Loading datasets from KaggleHub...
+2026-07-20 15:48:52 | INFO | __main__ | Loaded datasets: fab_capacity.csv and ai_chip_market.csv
+2026-07-20 15:48:52 | INFO | __main__ | Loaded: 313 rows and 7 columns from fab_capacity.csv
+2026-07-20 15:48:52 | INFO | __main__ | Loaded: 120 rows and 11 columns from ai_chip_market.csv
+2026-07-20 15:48:52 | INFO | __main__ | The intended target is 'monthly_wafer_capacity'.
+2026-07-20 15:48:52 | INFO | __main__ | Any feature derived FROM the target would leak the answer. Avoid those.
+2026-07-20 15:48:52 | INFO | __main__ | Per-column completeness and type:
+2026-07-20 15:48:52 | INFO | __main__ |   year                 int64      present=100.0%  missing=0
+2026-07-20 15:48:52 | INFO | __main__ |   company              str        present=100.0%  missing=0
+2026-07-20 15:48:52 | INFO | __main__ |   country_iso3         str        present=100.0%  missing=0
+2026-07-20 15:48:52 | INFO | __main__ |   process_node_nm      int64      present=100.0%  missing=0
+2026-07-20 15:48:52 | INFO | __main__ |   fab_type             str        present=100.0%  missing=0
+2026-07-20 15:48:52 | INFO | __main__ |   monthly_wafer_capacity int64      present=100.0%  missing=0
+2026-07-20 15:48:52 | INFO | __main__ |   fab_started_year     int64      present=100.0%  missing=0
+2026-07-20 15:48:52 | INFO | __main__ | Numeric summary (for spread / outliers):
+2026-07-20 15:48:52 | INFO | __main__ | Constructing features (vectorized, none are derived from the target)
+2026-07-20 15:48:52 | INFO | __main__ | Added features: ['fab_size', 'process_node_category']
+2026-07-20 15:53:35 | INFO | __main__ | === RUN START ===
+2026-07-20 15:53:35 | INFO | __main__ | project=Custom Project: Environment Setup
+2026-07-20 15:53:35 | INFO | __main__ | repo_dir=CS44670-Module-3
+2026-07-20 15:53:35 | INFO | __main__ | python=3.14.6
+2026-07-20 15:53:35 | INFO | __main__ | os=Windows 11
+2026-07-20 15:53:35 | INFO | __main__ | shell=powershell
+2026-07-20 15:53:35 | INFO | __main__ | cwd=notebooks
+2026-07-20 15:53:35 | INFO | __main__ | github_actions=False
+2026-07-20 15:53:35 | INFO | __main__ | Confirming installation:
+2026-07-20 15:53:35 | INFO | __main__ |   python:       3.14.6
+2026-07-20 15:53:35 | INFO | __main__ |   pandas:       3.0.3
+2026-07-20 15:53:35 | INFO | __main__ |   numpy:        2.5.1
+2026-07-20 15:53:35 | INFO | __main__ |   scikit-learn: 1.9.0
+2026-07-20 15:53:35 | INFO | __main__ |   matplotlib:   3.11.0
+2026-07-20 15:53:35 | INFO | __main__ | Loading datasets from KaggleHub...
+2026-07-20 15:53:36 | INFO | __main__ | Loaded datasets: fab_capacity.csv and ai_chip_market.csv
+2026-07-20 15:53:36 | INFO | __main__ | Loaded: 313 rows and 7 columns from fab_capacity.csv
+2026-07-20 15:53:36 | INFO | __main__ | Loaded: 120 rows and 11 columns from ai_chip_market.csv
+2026-07-20 15:53:36 | INFO | __main__ | The intended target is 'monthly_wafer_capacity'.
+2026-07-20 15:53:36 | INFO | __main__ | Any feature derived FROM the target would leak the answer. Avoid those.
+2026-07-20 15:53:36 | INFO | __main__ | Per-column completeness and type:
+2026-07-20 15:53:36 | INFO | __main__ |   year                 int64      present=100.0%  missing=0
+2026-07-20 15:53:36 | INFO | __main__ |   company              str        present=100.0%  missing=0
+2026-07-20 15:53:36 | INFO | __main__ |   country_iso3         str        present=100.0%  missing=0
+2026-07-20 15:53:36 | INFO | __main__ |   process_node_nm      int64      present=100.0%  missing=0
+2026-07-20 15:53:36 | INFO | __main__ |   fab_type             str        present=100.0%  missing=0
+2026-07-20 15:53:36 | INFO | __main__ |   monthly_wafer_capacity int64      present=100.0%  missing=0
+2026-07-20 15:53:36 | INFO | __main__ |   fab_started_year     int64      present=100.0%  missing=0
+2026-07-20 15:53:36 | INFO | __main__ | Numeric summary (for spread / outliers):
+2026-07-20 15:53:36 | INFO | __main__ | Constructing features (vectorized, none are derived from the target)
+2026-07-20 15:53:36 | INFO | __main__ | Added features: ['fab_size', 'process_node_category']
+2026-07-20 16:02:21 | INFO | __main__ | === RUN START ===
+2026-07-20 16:02:21 | INFO | __main__ | project=Custom Project: Environment Setup
+2026-07-20 16:02:21 | INFO | __main__ | repo_dir=CS44670-Module-3
+2026-07-20 16:02:21 | INFO | __main__ | python=3.14.6
+2026-07-20 16:02:21 | INFO | __main__ | os=Windows 11
+2026-07-20 16:02:21 | INFO | __main__ | shell=powershell
+2026-07-20 16:02:21 | INFO | __main__ | cwd=notebooks
+2026-07-20 16:02:21 | INFO | __main__ | github_actions=False
+2026-07-20 16:02:21 | INFO | __main__ | Confirming installation:
+2026-07-20 16:02:21 | INFO | __main__ |   python:       3.14.6
+2026-07-20 16:02:21 | INFO | __main__ |   pandas:       3.0.3
+2026-07-20 16:02:21 | INFO | __main__ |   numpy:        2.5.1
+2026-07-20 16:02:21 | INFO | __main__ |   scikit-learn: 1.9.0
+2026-07-20 16:02:21 | INFO | __main__ |   matplotlib:   3.11.0
+2026-07-20 16:02:21 | INFO | __main__ | Loading datasets from KaggleHub...
+2026-07-20 16:02:22 | INFO | __main__ | Loaded datasets: fab_capacity.csv and ai_chip_market.csv
+2026-07-20 16:02:22 | INFO | __main__ | Loaded: 313 rows and 7 columns from fab_capacity.csv
+2026-07-20 16:02:22 | INFO | __main__ | Loaded: 120 rows and 11 columns from ai_chip_market.csv
+2026-07-20 16:02:22 | INFO | __main__ | The intended target is 'monthly_wafer_capacity'.
+2026-07-20 16:02:22 | INFO | __main__ | Any feature derived FROM the target would leak the answer. Avoid those.
+2026-07-20 16:02:22 | INFO | __main__ | Per-column completeness and type:
+2026-07-20 16:02:22 | INFO | __main__ |   year                 int64      present=100.0%  missing=0
+2026-07-20 16:02:22 | INFO | __main__ |   company              str        present=100.0%  missing=0
+2026-07-20 16:02:22 | INFO | __main__ |   country_iso3         str        present=100.0%  missing=0
+2026-07-20 16:02:22 | INFO | __main__ |   process_node_nm      int64      present=100.0%  missing=0
+2026-07-20 16:02:22 | INFO | __main__ |   fab_type             str        present=100.0%  missing=0
+2026-07-20 16:02:22 | INFO | __main__ |   monthly_wafer_capacity int64      present=100.0%  missing=0
+2026-07-20 16:02:22 | INFO | __main__ |   fab_started_year     int64      present=100.0%  missing=0
+2026-07-20 16:02:22 | INFO | __main__ | Numeric summary (for spread / outliers):
+2026-07-20 16:02:22 | INFO | __main__ | Constructing features (vectorized, none are derived from the target)
+2026-07-20 16:02:22 | INFO | __main__ | Added features: ['fab_size', 'process_node_category']
+2026-07-20 16:47:27 | INFO | __main__ | === RUN START ===
+2026-07-20 16:47:27 | INFO | __main__ | project=Custom Project: Environment Setup
+2026-07-20 16:47:27 | INFO | __main__ | repo_dir=CS44670-Module-3
+2026-07-20 16:47:27 | INFO | __main__ | python=3.14.6
+2026-07-20 16:47:27 | INFO | __main__ | os=Windows 11
+2026-07-20 16:47:27 | INFO | __main__ | shell=powershell
+2026-07-20 16:47:27 | INFO | __main__ | cwd=notebooks
+2026-07-20 16:47:27 | INFO | __main__ | github_actions=False
+2026-07-20 16:47:27 | INFO | __main__ | Confirming installation:
+2026-07-20 16:47:27 | INFO | __main__ |   python:       3.14.6
+2026-07-20 16:47:27 | INFO | __main__ |   pandas:       3.0.3
+2026-07-20 16:47:27 | INFO | __main__ |   numpy:        2.5.1
+2026-07-20 16:47:27 | INFO | __main__ |   scikit-learn: 1.9.0
+2026-07-20 16:47:27 | INFO | __main__ |   matplotlib:   3.11.0
+2026-07-20 16:47:27 | INFO | __main__ | Loading datasets from KaggleHub...
+2026-07-20 16:47:27 | INFO | __main__ | Loaded datasets: fab_capacity.csv and ai_chip_market.csv
+2026-07-20 16:47:27 | INFO | __main__ | Loaded: 313 rows and 7 columns from fab_capacity.csv
+2026-07-20 16:47:27 | INFO | __main__ | Loaded: 120 rows and 11 columns from ai_chip_market.csv
+2026-07-20 16:47:27 | INFO | __main__ | The intended target is 'monthly_wafer_capacity'.
+2026-07-20 16:47:27 | INFO | __main__ | Any feature derived FROM the target would leak the answer. Avoid those.
+2026-07-20 16:47:27 | INFO | __main__ | Per-column completeness and type:
+2026-07-20 16:47:27 | INFO | __main__ |   year                 int64      present=100.0%  missing=0
+2026-07-20 16:47:27 | INFO | __main__ |   company              str        present=100.0%  missing=0
+2026-07-20 16:47:27 | INFO | __main__ |   country_iso3         str        present=100.0%  missing=0
+2026-07-20 16:47:27 | INFO | __main__ |   process_node_nm      int64      present=100.0%  missing=0
+2026-07-20 16:47:27 | INFO | __main__ |   fab_type             str        present=100.0%  missing=0
+2026-07-20 16:47:27 | INFO | __main__ |   monthly_wafer_capacity int64      present=100.0%  missing=0
+2026-07-20 16:47:27 | INFO | __main__ |   fab_started_year     int64      present=100.0%  missing=0
+2026-07-20 16:47:27 | INFO | __main__ | Numeric summary (for spread / outliers):
+2026-07-20 16:47:28 | INFO | __main__ | Constructing features (vectorized, none are derived from the target)
+2026-07-20 16:47:28 | INFO | __main__ | Added features: ['fab_size', 'process_node_category']
+2026-07-20 16:47:28 | INFO | __main__ | Train instances: 187
+2026-07-20 16:47:28 | INFO | __main__ | Test instances: 126
+2026-07-20 16:47:42 | INFO | __main__ | === RUN START ===
+2026-07-20 16:47:42 | INFO | __main__ | project=Custom Project: Environment Setup
+2026-07-20 16:47:42 | INFO | __main__ | repo_dir=CS44670-Module-3
+2026-07-20 16:47:42 | INFO | __main__ | python=3.14.6
+2026-07-20 16:47:42 | INFO | __main__ | os=Windows 11
+2026-07-20 16:47:42 | INFO | __main__ | shell=powershell
+2026-07-20 16:47:42 | INFO | __main__ | cwd=notebooks
+2026-07-20 16:47:42 | INFO | __main__ | github_actions=False
+2026-07-20 16:47:42 | INFO | __main__ | Confirming installation:
+2026-07-20 16:47:42 | INFO | __main__ |   python:       3.14.6
+2026-07-20 16:47:42 | INFO | __main__ |   pandas:       3.0.3
+2026-07-20 16:47:42 | INFO | __main__ |   numpy:        2.5.1
+2026-07-20 16:47:42 | INFO | __main__ |   scikit-learn: 1.9.0
+2026-07-20 16:47:42 | INFO | __main__ |   matplotlib:   3.11.0
+2026-07-20 16:47:42 | INFO | __main__ | Loading datasets from KaggleHub...
+2026-07-20 16:47:43 | INFO | __main__ | Loaded datasets: fab_capacity.csv and ai_chip_market.csv
+2026-07-20 16:47:43 | INFO | __main__ | Loaded: 313 rows and 7 columns from fab_capacity.csv
+2026-07-20 16:47:43 | INFO | __main__ | Loaded: 120 rows and 11 columns from ai_chip_market.csv
+2026-07-20 16:47:43 | INFO | __main__ | The intended target is 'monthly_wafer_capacity'.
+2026-07-20 16:47:43 | INFO | __main__ | Any feature derived FROM the target would leak the answer. Avoid those.
+2026-07-20 16:47:43 | INFO | __main__ | Per-column completeness and type:
+2026-07-20 16:47:43 | INFO | __main__ |   year                 int64      present=100.0%  missing=0
+2026-07-20 16:47:43 | INFO | __main__ |   company              str        present=100.0%  missing=0
+2026-07-20 16:47:43 | INFO | __main__ |   country_iso3         str        present=100.0%  missing=0
+2026-07-20 16:47:43 | INFO | __main__ |   process_node_nm      int64      present=100.0%  missing=0
+2026-07-20 16:47:43 | INFO | __main__ |   fab_type             str        present=100.0%  missing=0
+2026-07-20 16:47:43 | INFO | __main__ |   monthly_wafer_capacity int64      present=100.0%  missing=0
+2026-07-20 16:47:43 | INFO | __main__ |   fab_started_year     int64      present=100.0%  missing=0
+2026-07-20 16:47:43 | INFO | __main__ | Numeric summary (for spread / outliers):
+2026-07-20 16:47:43 | INFO | __main__ | Constructing features (vectorized, none are derived from the target)
+2026-07-20 16:47:43 | INFO | __main__ | Added features: ['fab_size', 'process_node_category']
+2026-07-20 16:47:43 | INFO | __main__ | Train instances: 250
+2026-07-20 16:47:43 | INFO | __main__ | Test instances: 63
+2026-07-20 16:47:49 | INFO | __main__ | Train instances: 250
+2026-07-20 16:47:49 | INFO | __main__ | Test instances: 63
+2026-07-20 16:47:53 | INFO | __main__ | Train instances: 250
+2026-07-20 16:47:53 | INFO | __main__ | Test instances: 63
+2026-07-20 16:49:01 | INFO | __main__ | === RUN START ===
+2026-07-20 16:49:01 | INFO | __main__ | project=Custom Project: Environment Setup
+2026-07-20 16:49:01 | INFO | __main__ | repo_dir=CS44670-Module-3
+2026-07-20 16:49:01 | INFO | __main__ | python=3.14.6
+2026-07-20 16:49:01 | INFO | __main__ | os=Windows 11
+2026-07-20 16:49:01 | INFO | __main__ | shell=powershell
+2026-07-20 16:49:01 | INFO | __main__ | cwd=notebooks
+2026-07-20 16:49:01 | INFO | __main__ | github_actions=False
+2026-07-20 16:49:01 | INFO | __main__ | Confirming installation:
+2026-07-20 16:49:01 | INFO | __main__ |   python:       3.14.6
+2026-07-20 16:49:01 | INFO | __main__ |   pandas:       3.0.3
+2026-07-20 16:49:01 | INFO | __main__ |   numpy:        2.5.1
+2026-07-20 16:49:01 | INFO | __main__ |   scikit-learn: 1.9.0
+2026-07-20 16:49:01 | INFO | __main__ |   matplotlib:   3.11.0
+2026-07-20 16:49:01 | INFO | __main__ | Loading datasets from KaggleHub...
+2026-07-20 16:49:02 | INFO | __main__ | Loaded datasets: fab_capacity.csv and ai_chip_market.csv
+2026-07-20 16:49:02 | INFO | __main__ | Loaded: 313 rows and 7 columns from fab_capacity.csv
+2026-07-20 16:49:02 | INFO | __main__ | Loaded: 120 rows and 11 columns from ai_chip_market.csv
+2026-07-20 16:49:02 | INFO | __main__ | The intended target is 'monthly_wafer_capacity'.
+2026-07-20 16:49:02 | INFO | __main__ | Any feature derived FROM the target would leak the answer. Avoid those.
+2026-07-20 16:49:02 | INFO | __main__ | Per-column completeness and type:
+2026-07-20 16:49:02 | INFO | __main__ |   year                 int64      present=100.0%  missing=0
+2026-07-20 16:49:02 | INFO | __main__ |   company              str        present=100.0%  missing=0
+2026-07-20 16:49:02 | INFO | __main__ |   country_iso3         str        present=100.0%  missing=0
+2026-07-20 16:49:02 | INFO | __main__ |   process_node_nm      int64      present=100.0%  missing=0
+2026-07-20 16:49:02 | INFO | __main__ |   fab_type             str        present=100.0%  missing=0
+2026-07-20 16:49:02 | INFO | __main__ |   monthly_wafer_capacity int64      present=100.0%  missing=0
+2026-07-20 16:49:02 | INFO | __main__ |   fab_started_year     int64      present=100.0%  missing=0
+2026-07-20 16:49:02 | INFO | __main__ | Numeric summary (for spread / outliers):
+2026-07-20 16:49:02 | INFO | __main__ | Constructing features (vectorized, none are derived from the target)
+2026-07-20 16:49:02 | INFO | __main__ | Added features: ['fab_size', 'process_node_category']
+2026-07-20 16:49:02 | INFO | __main__ | Train instances: 250
+2026-07-20 16:49:02 | INFO | __main__ | Test instances: 63
+2026-07-20 16:49:59 | INFO | __main__ | === RUN START ===
+2026-07-20 16:49:59 | INFO | __main__ | project=Custom Project: Environment Setup
+2026-07-20 16:49:59 | INFO | __main__ | repo_dir=CS44670-Module-3
+2026-07-20 16:49:59 | INFO | __main__ | python=3.14.6
+2026-07-20 16:49:59 | INFO | __main__ | os=Windows 11
+2026-07-20 16:49:59 | INFO | __main__ | shell=powershell
+2026-07-20 16:49:59 | INFO | __main__ | cwd=notebooks
+2026-07-20 16:49:59 | INFO | __main__ | github_actions=False
+2026-07-20 16:49:59 | INFO | __main__ | Confirming installation:
+2026-07-20 16:49:59 | INFO | __main__ |   python:       3.14.6
+2026-07-20 16:49:59 | INFO | __main__ |   pandas:       3.0.3
+2026-07-20 16:49:59 | INFO | __main__ |   numpy:        2.5.1
+2026-07-20 16:49:59 | INFO | __main__ |   scikit-learn: 1.9.0
+2026-07-20 16:49:59 | INFO | __main__ |   matplotlib:   3.11.0
+2026-07-20 16:50:37 | INFO | __main__ | Train instances: 250
+2026-07-20 16:50:37 | INFO | __main__ | Test instances: 63
+2026-07-20 16:50:39 | INFO | __main__ | === RUN START ===
+2026-07-20 16:50:39 | INFO | __main__ | project=Custom Project: Environment Setup
+2026-07-20 16:50:39 | INFO | __main__ | repo_dir=CS44670-Module-3
+2026-07-20 16:50:39 | INFO | __main__ | python=3.14.6
+2026-07-20 16:50:39 | INFO | __main__ | os=Windows 11
+2026-07-20 16:50:39 | INFO | __main__ | shell=powershell
+2026-07-20 16:50:39 | INFO | __main__ | cwd=notebooks
+2026-07-20 16:50:39 | INFO | __main__ | github_actions=False
+2026-07-20 16:50:39 | INFO | __main__ | Confirming installation:
+2026-07-20 16:50:39 | INFO | __main__ |   python:       3.14.6
+2026-07-20 16:50:39 | INFO | __main__ |   pandas:       3.0.3
+2026-07-20 16:50:39 | INFO | __main__ |   numpy:        2.5.1
+2026-07-20 16:50:39 | INFO | __main__ |   scikit-learn: 1.9.0
+2026-07-20 16:50:39 | INFO | __main__ |   matplotlib:   3.11.0
+2026-07-20 16:50:39 | INFO | __main__ | Loading datasets from KaggleHub...
+2026-07-20 16:50:40 | INFO | __main__ | Loaded datasets: fab_capacity.csv and ai_chip_market.csv
+2026-07-20 16:50:40 | INFO | __main__ | Loaded: 313 rows and 7 columns from fab_capacity.csv
+2026-07-20 16:50:40 | INFO | __main__ | Loaded: 120 rows and 11 columns from ai_chip_market.csv
+2026-07-20 16:50:40 | INFO | __main__ | The intended target is 'monthly_wafer_capacity'.
+2026-07-20 16:50:40 | INFO | __main__ | Any feature derived FROM the target would leak the answer. Avoid those.
+2026-07-20 16:50:40 | INFO | __main__ | Per-column completeness and type:
+2026-07-20 16:50:40 | INFO | __main__ |   year                 int64      present=100.0%  missing=0
+2026-07-20 16:50:40 | INFO | __main__ |   company              str        present=100.0%  missing=0
+2026-07-20 16:50:40 | INFO | __main__ |   country_iso3         str        present=100.0%  missing=0
+2026-07-20 16:50:40 | INFO | __main__ |   process_node_nm      int64      present=100.0%  missing=0
+2026-07-20 16:50:40 | INFO | __main__ |   fab_type             str        present=100.0%  missing=0
+2026-07-20 16:50:40 | INFO | __main__ |   monthly_wafer_capacity int64      present=100.0%  missing=0
+2026-07-20 16:50:40 | INFO | __main__ |   fab_started_year     int64      present=100.0%  missing=0
+2026-07-20 16:50:40 | INFO | __main__ | Numeric summary (for spread / outliers):
+2026-07-20 16:50:40 | INFO | __main__ | Constructing features (vectorized, none are derived from the target)
+2026-07-20 16:50:40 | INFO | __main__ | Added features: ['fab_size', 'process_node_category']
+2026-07-20 16:50:40 | INFO | __main__ | Train instances: 250
+2026-07-20 16:50:40 | INFO | __main__ | Test instances: 63
+2026-07-20 16:50:44 | INFO | __main__ | === RUN START ===
+2026-07-20 16:50:44 | INFO | __main__ | project=Custom Project: Environment Setup
+2026-07-20 16:50:44 | INFO | __main__ | repo_dir=CS44670-Module-3
+2026-07-20 16:50:44 | INFO | __main__ | python=3.14.6
+2026-07-20 16:50:44 | INFO | __main__ | os=Windows 11
+2026-07-20 16:50:44 | INFO | __main__ | shell=powershell
+2026-07-20 16:50:44 | INFO | __main__ | cwd=notebooks
+2026-07-20 16:50:44 | INFO | __main__ | github_actions=False
+2026-07-20 16:50:44 | INFO | __main__ | Confirming installation:
+2026-07-20 16:50:44 | INFO | __main__ |   python:       3.14.6
+2026-07-20 16:50:44 | INFO | __main__ |   pandas:       3.0.3
+2026-07-20 16:50:44 | INFO | __main__ |   numpy:        2.5.1
+2026-07-20 16:50:44 | INFO | __main__ |   scikit-learn: 1.9.0
+2026-07-20 16:50:44 | INFO | __main__ |   matplotlib:   3.11.0
+2026-07-20 16:50:44 | INFO | __main__ | Loading datasets from KaggleHub...
+2026-07-20 16:50:45 | INFO | __main__ | Loaded datasets: fab_capacity.csv and ai_chip_market.csv
+2026-07-20 16:50:45 | INFO | __main__ | Loaded: 313 rows and 7 columns from fab_capacity.csv
+2026-07-20 16:50:45 | INFO | __main__ | Loaded: 120 rows and 11 columns from ai_chip_market.csv
+2026-07-20 16:50:45 | INFO | __main__ | The intended target is 'monthly_wafer_capacity'.
+2026-07-20 16:50:45 | INFO | __main__ | Any feature derived FROM the target would leak the answer. Avoid those.
+2026-07-20 16:50:45 | INFO | __main__ | Per-column completeness and type:
+2026-07-20 16:50:45 | INFO | __main__ |   year                 int64      present=100.0%  missing=0
+2026-07-20 16:50:45 | INFO | __main__ |   company              str        present=100.0%  missing=0
+2026-07-20 16:50:45 | INFO | __main__ |   country_iso3         str        present=100.0%  missing=0
+2026-07-20 16:50:45 | INFO | __main__ |   process_node_nm      int64      present=100.0%  missing=0
+2026-07-20 16:50:45 | INFO | __main__ |   fab_type             str        present=100.0%  missing=0
+2026-07-20 16:50:45 | INFO | __main__ |   monthly_wafer_capacity int64      present=100.0%  missing=0
+2026-07-20 16:50:45 | INFO | __main__ |   fab_started_year     int64      present=100.0%  missing=0
+2026-07-20 16:50:45 | INFO | __main__ | Numeric summary (for spread / outliers):
+2026-07-20 16:50:45 | INFO | __main__ | Constructing features (vectorized, none are derived from the target)
+2026-07-20 16:50:45 | INFO | __main__ | Added features: ['fab_size', 'process_node_category']
+2026-07-20 16:50:45 | INFO | __main__ | Train instances: 250
+2026-07-20 16:50:45 | INFO | __main__ | Test instances: 63
+2026-07-20 16:52:56 | INFO | __main__ | === RUN START ===
+2026-07-20 16:52:56 | INFO | __main__ | project=Custom Project: Environment Setup
+2026-07-20 16:52:56 | INFO | __main__ | repo_dir=CS44670-Module-3
+2026-07-20 16:52:56 | INFO | __main__ | python=3.14.6
+2026-07-20 16:52:56 | INFO | __main__ | os=Windows 11
+2026-07-20 16:52:56 | INFO | __main__ | shell=powershell
+2026-07-20 16:52:56 | INFO | __main__ | cwd=notebooks
+2026-07-20 16:52:56 | INFO | __main__ | github_actions=False
+2026-07-20 16:52:56 | INFO | __main__ | Confirming installation:
+2026-07-20 16:52:56 | INFO | __main__ |   python:       3.14.6
+2026-07-20 16:52:56 | INFO | __main__ |   pandas:       3.0.3
+2026-07-20 16:52:56 | INFO | __main__ |   numpy:        2.5.1
+2026-07-20 16:52:56 | INFO | __main__ |   scikit-learn: 1.9.0
+2026-07-20 16:52:56 | INFO | __main__ |   matplotlib:   3.11.0
+2026-07-20 16:52:56 | INFO | __main__ | Loading datasets from KaggleHub...
+2026-07-20 16:52:56 | INFO | __main__ | Loaded datasets: fab_capacity.csv and ai_chip_market.csv
+2026-07-20 16:52:56 | INFO | __main__ | Loaded: 313 rows and 7 columns from fab_capacity.csv
+2026-07-20 16:52:56 | INFO | __main__ | Loaded: 120 rows and 11 columns from ai_chip_market.csv
+2026-07-20 16:52:56 | INFO | __main__ | The intended target is 'monthly_wafer_capacity'.
+2026-07-20 16:52:56 | INFO | __main__ | Any feature derived FROM the target would leak the answer. Avoid those.
+2026-07-20 16:52:56 | INFO | __main__ | Per-column completeness and type:
+2026-07-20 16:52:56 | INFO | __main__ |   year                 int64      present=100.0%  missing=0
+2026-07-20 16:52:56 | INFO | __main__ |   company              str        present=100.0%  missing=0
+2026-07-20 16:52:56 | INFO | __main__ |   country_iso3         str        present=100.0%  missing=0
+2026-07-20 16:52:56 | INFO | __main__ |   process_node_nm      int64      present=100.0%  missing=0
+2026-07-20 16:52:56 | INFO | __main__ |   fab_type             str        present=100.0%  missing=0
+2026-07-20 16:52:56 | INFO | __main__ |   monthly_wafer_capacity int64      present=100.0%  missing=0
+2026-07-20 16:52:56 | INFO | __main__ |   fab_started_year     int64      present=100.0%  missing=0
+2026-07-20 16:52:56 | INFO | __main__ | Numeric summary (for spread / outliers):
+2026-07-20 16:52:57 | INFO | __main__ | Constructing features (vectorized, none are derived from the target)
+2026-07-20 16:52:57 | INFO | __main__ | Added features: ['fab_size', 'process_node_category']
+2026-07-20 16:52:57 | INFO | __main__ | Train instances: 250
+2026-07-20 16:52:57 | INFO | __main__ | Test instances: 63
+2026-07-20 16:52:57 | INFO | __main__ | Test accuracy: 0.508
+2026-07-20 16:52:57 | INFO | __main__ | Per-class precision / recall / F1:
+2026-07-20 16:52:57 | INFO | __main__ | Showing confusion matrix (rows = actual, cols = predicted)
+2026-07-20 16:56:53 | INFO | __main__ | === RUN START ===
+2026-07-20 16:56:53 | INFO | __main__ | project=Custom Project: Environment Setup
+2026-07-20 16:56:53 | INFO | __main__ | repo_dir=CS44670-Module-3
+2026-07-20 16:56:53 | INFO | __main__ | python=3.14.6
+2026-07-20 16:56:53 | INFO | __main__ | os=Windows 11
+2026-07-20 16:56:53 | INFO | __main__ | shell=powershell
+2026-07-20 16:56:53 | INFO | __main__ | cwd=notebooks
+2026-07-20 16:56:53 | INFO | __main__ | github_actions=False
+2026-07-20 16:56:53 | INFO | __main__ | Confirming installation:
+2026-07-20 16:56:53 | INFO | __main__ |   python:       3.14.6
+2026-07-20 16:56:53 | INFO | __main__ |   pandas:       3.0.3
+2026-07-20 16:56:53 | INFO | __main__ |   numpy:        2.5.1
+2026-07-20 16:56:53 | INFO | __main__ |   scikit-learn: 1.9.0
+2026-07-20 16:56:53 | INFO | __main__ |   matplotlib:   3.11.0
+2026-07-20 16:56:53 | INFO | __main__ | Loading datasets from KaggleHub...
+2026-07-20 16:56:54 | INFO | __main__ | Loaded datasets: fab_capacity.csv and ai_chip_market.csv
+2026-07-20 16:56:54 | INFO | __main__ | Loaded: 313 rows and 7 columns from fab_capacity.csv
+2026-07-20 16:56:54 | INFO | __main__ | Loaded: 120 rows and 11 columns from ai_chip_market.csv
+2026-07-20 16:56:54 | INFO | __main__ | The intended target is 'monthly_wafer_capacity'.
+2026-07-20 16:56:54 | INFO | __main__ | Any feature derived FROM the target would leak the answer. Avoid those.
+2026-07-20 16:56:54 | INFO | __main__ | Per-column completeness and type:
+2026-07-20 16:56:54 | INFO | __main__ |   year                 int64      present=100.0%  missing=0
+2026-07-20 16:56:54 | INFO | __main__ |   company              str        present=100.0%  missing=0
+2026-07-20 16:56:54 | INFO | __main__ |   country_iso3         str        present=100.0%  missing=0
+2026-07-20 16:56:54 | INFO | __main__ |   process_node_nm      int64      present=100.0%  missing=0
+2026-07-20 16:56:54 | INFO | __main__ |   fab_type             str        present=100.0%  missing=0
+2026-07-20 16:56:54 | INFO | __main__ |   monthly_wafer_capacity int64      present=100.0%  missing=0
+2026-07-20 16:56:54 | INFO | __main__ |   fab_started_year     int64      present=100.0%  missing=0
+2026-07-20 16:56:54 | INFO | __main__ | Numeric summary (for spread / outliers):
+2026-07-20 16:56:54 | INFO | __main__ | Constructing features (vectorized, none are derived from the target)
+2026-07-20 16:56:54 | INFO | __main__ | Added features: ['fab_size', 'process_node_category']
+2026-07-20 16:56:54 | INFO | __main__ | Train instances: 250
+2026-07-20 16:56:54 | INFO | __main__ | Test instances: 63
+2026-07-20 16:56:54 | INFO | __main__ | Test accuracy: 0.841
+2026-07-20 16:56:54 | INFO | __main__ | Per-class precision / recall / F1:
+2026-07-20 16:56:54 | INFO | __main__ | Showing confusion matrix (rows = actual, cols = predicted)
+2026-07-20 16:58:08 | INFO | __main__ | Test accuracy: 0.841
+2026-07-20 16:58:08 | INFO | __main__ | Per-class precision / recall / F1:
+2026-07-20 16:58:08 | INFO | __main__ | 
+              precision    recall  f1-score   support
+
+       Intel       0.58      0.88      0.70         8
+      Others       0.88      0.88      0.88        43
+        TSMC       1.00      0.67      0.80        12
+
+    accuracy                           0.84        63
+   macro avg       0.82      0.81      0.79        63
+weighted avg       0.87      0.84      0.84        63
+
+2026-07-20 16:58:08 | INFO | __main__ | Showing confusion matrix (rows = actual, cols = predicted)
+2026-07-20 16:58:24 | INFO | __main__ | === RUN START ===
+2026-07-20 16:58:24 | INFO | __main__ | project=Custom Project: Environment Setup
+2026-07-20 16:58:24 | INFO | __main__ | repo_dir=CS44670-Module-3
+2026-07-20 16:58:24 | INFO | __main__ | python=3.14.6
+2026-07-20 16:58:24 | INFO | __main__ | os=Windows 11
+2026-07-20 16:58:24 | INFO | __main__ | shell=powershell
+2026-07-20 16:58:24 | INFO | __main__ | cwd=notebooks
+2026-07-20 16:58:24 | INFO | __main__ | github_actions=False
+2026-07-20 16:58:24 | INFO | __main__ | Confirming installation:
+2026-07-20 16:58:24 | INFO | __main__ |   python:       3.14.6
+2026-07-20 16:58:24 | INFO | __main__ |   pandas:       3.0.3
+2026-07-20 16:58:24 | INFO | __main__ |   numpy:        2.5.1
+2026-07-20 16:58:24 | INFO | __main__ |   scikit-learn: 1.9.0
+2026-07-20 16:58:24 | INFO | __main__ |   matplotlib:   3.11.0
+2026-07-20 16:58:24 | INFO | __main__ | Loading datasets from KaggleHub...
+2026-07-20 16:58:25 | INFO | __main__ | Loaded datasets: fab_capacity.csv and ai_chip_market.csv
+2026-07-20 16:58:25 | INFO | __main__ | Loaded: 313 rows and 7 columns from fab_capacity.csv
+2026-07-20 16:58:25 | INFO | __main__ | Loaded: 120 rows and 11 columns from ai_chip_market.csv
+2026-07-20 16:58:25 | INFO | __main__ | The intended target is 'monthly_wafer_capacity'.
+2026-07-20 16:58:25 | INFO | __main__ | Any feature derived FROM the target would leak the answer. Avoid those.
+2026-07-20 16:58:25 | INFO | __main__ | Per-column completeness and type:
+2026-07-20 16:58:25 | INFO | __main__ |   year                 int64      present=100.0%  missing=0
+2026-07-20 16:58:25 | INFO | __main__ |   company              str        present=100.0%  missing=0
+2026-07-20 16:58:25 | INFO | __main__ |   country_iso3         str        present=100.0%  missing=0
+2026-07-20 16:58:25 | INFO | __main__ |   process_node_nm      int64      present=100.0%  missing=0
+2026-07-20 16:58:25 | INFO | __main__ |   fab_type             str        present=100.0%  missing=0
+2026-07-20 16:58:25 | INFO | __main__ |   monthly_wafer_capacity int64      present=100.0%  missing=0
+2026-07-20 16:58:25 | INFO | __main__ |   fab_started_year     int64      present=100.0%  missing=0
+2026-07-20 16:58:25 | INFO | __main__ | Numeric summary (for spread / outliers):
+2026-07-20 16:58:25 | INFO | __main__ | Constructing features (vectorized, none are derived from the target)
+2026-07-20 16:58:25 | INFO | __main__ | Added features: ['fab_size', 'process_node_category']
+2026-07-20 16:58:25 | INFO | __main__ | Train instances: 250
+2026-07-20 16:58:25 | INFO | __main__ | Test instances: 63
+2026-07-20 16:58:54 | INFO | __main__ | === RUN START ===
+2026-07-20 16:58:54 | INFO | __main__ | project=Custom Project: Environment Setup
+2026-07-20 16:58:54 | INFO | __main__ | repo_dir=CS44670-Module-3
+2026-07-20 16:58:54 | INFO | __main__ | python=3.14.6
+2026-07-20 16:58:54 | INFO | __main__ | os=Windows 11
+2026-07-20 16:58:54 | INFO | __main__ | shell=powershell
+2026-07-20 16:58:54 | INFO | __main__ | cwd=notebooks
+2026-07-20 16:58:54 | INFO | __main__ | github_actions=False
+2026-07-20 16:58:54 | INFO | __main__ | Confirming installation:
+2026-07-20 16:58:54 | INFO | __main__ |   python:       3.14.6
+2026-07-20 16:58:54 | INFO | __main__ |   pandas:       3.0.3
+2026-07-20 16:58:54 | INFO | __main__ |   numpy:        2.5.1
+2026-07-20 16:58:54 | INFO | __main__ |   scikit-learn: 1.9.0
+2026-07-20 16:58:54 | INFO | __main__ |   matplotlib:   3.11.0
+2026-07-20 16:58:54 | INFO | __main__ | Loading datasets from KaggleHub...
+2026-07-20 16:58:55 | INFO | __main__ | Loaded datasets: fab_capacity.csv and ai_chip_market.csv
+2026-07-20 16:58:55 | INFO | __main__ | Loaded: 313 rows and 7 columns from fab_capacity.csv
+2026-07-20 16:58:55 | INFO | __main__ | Loaded: 120 rows and 11 columns from ai_chip_market.csv
+2026-07-20 16:58:55 | INFO | __main__ | The intended target is 'monthly_wafer_capacity'.
+2026-07-20 16:58:55 | INFO | __main__ | Any feature derived FROM the target would leak the answer. Avoid those.
+2026-07-20 16:58:55 | INFO | __main__ | Per-column completeness and type:
+2026-07-20 16:58:55 | INFO | __main__ |   year                 int64      present=100.0%  missing=0
+2026-07-20 16:58:55 | INFO | __main__ |   company              str        present=100.0%  missing=0
+2026-07-20 16:58:55 | INFO | __main__ |   country_iso3         str        present=100.0%  missing=0
+2026-07-20 16:58:55 | INFO | __main__ |   process_node_nm      int64      present=100.0%  missing=0
+2026-07-20 16:58:55 | INFO | __main__ |   fab_type             str        present=100.0%  missing=0
+2026-07-20 16:58:55 | INFO | __main__ |   monthly_wafer_capacity int64      present=100.0%  missing=0
+2026-07-20 16:58:55 | INFO | __main__ |   fab_started_year     int64      present=100.0%  missing=0
+2026-07-20 16:58:55 | INFO | __main__ | Numeric summary (for spread / outliers):
+2026-07-20 16:58:55 | INFO | __main__ | Constructing features (vectorized, none are derived from the target)
+2026-07-20 16:58:55 | INFO | __main__ | Added features: ['fab_size', 'process_node_category']
+2026-07-20 16:58:55 | INFO | __main__ | Train instances: 250
+2026-07-20 16:58:55 | INFO | __main__ | Test instances: 63
+2026-07-20 16:58:55 | INFO | __main__ | Test accuracy: 0.841
+2026-07-20 16:58:55 | INFO | __main__ | Per-class precision / recall / F1:
+2026-07-20 16:58:55 | INFO | __main__ | 
+              precision    recall  f1-score   support
+
+       Intel       0.58      0.88      0.70         8
+      Others       0.88      0.88      0.88        43
+        TSMC       1.00      0.67      0.80        12
+
+    accuracy                           0.84        63
+   macro avg       0.82      0.81      0.79        63
+weighted avg       0.87      0.84      0.84        63
+
+2026-07-20 16:58:55 | INFO | __main__ | Showing confusion matrix (rows = actual, cols = predicted)
+2026-07-20 17:01:23 | INFO | __main__ | === RUN START ===
+2026-07-20 17:01:23 | INFO | __main__ | project=Custom Project: Environment Setup
+2026-07-20 17:01:23 | INFO | __main__ | repo_dir=CS44670-Module-3
+2026-07-20 17:01:23 | INFO | __main__ | python=3.14.6
+2026-07-20 17:01:23 | INFO | __main__ | os=Windows 11
+2026-07-20 17:01:23 | INFO | __main__ | shell=powershell
+2026-07-20 17:01:23 | INFO | __main__ | cwd=notebooks
+2026-07-20 17:01:23 | INFO | __main__ | github_actions=False
+2026-07-20 17:01:23 | INFO | __main__ | Confirming installation:
+2026-07-20 17:01:23 | INFO | __main__ |   python:       3.14.6
+2026-07-20 17:01:23 | INFO | __main__ |   pandas:       3.0.3
+2026-07-20 17:01:23 | INFO | __main__ |   numpy:        2.5.1
+2026-07-20 17:01:23 | INFO | __main__ |   scikit-learn: 1.9.0
+2026-07-20 17:01:23 | INFO | __main__ |   matplotlib:   3.11.0
+2026-07-20 17:01:23 | INFO | __main__ | Loading datasets from KaggleHub...
+2026-07-20 17:01:23 | INFO | __main__ | Loaded datasets: fab_capacity.csv and ai_chip_market.csv
+2026-07-20 17:01:23 | INFO | __main__ | Loaded: 313 rows and 7 columns from fab_capacity.csv
+2026-07-20 17:01:23 | INFO | __main__ | Loaded: 120 rows and 11 columns from ai_chip_market.csv
+2026-07-20 17:01:23 | INFO | __main__ | The intended target is 'monthly_wafer_capacity'.
+2026-07-20 17:01:23 | INFO | __main__ | Any feature derived FROM the target would leak the answer. Avoid those.
+2026-07-20 17:01:23 | INFO | __main__ | Per-column completeness and type:
+2026-07-20 17:01:23 | INFO | __main__ |   year                 int64      present=100.0%  missing=0
+2026-07-20 17:01:23 | INFO | __main__ |   company              str        present=100.0%  missing=0
+2026-07-20 17:01:23 | INFO | __main__ |   country_iso3         str        present=100.0%  missing=0
+2026-07-20 17:01:23 | INFO | __main__ |   process_node_nm      int64      present=100.0%  missing=0
+2026-07-20 17:01:23 | INFO | __main__ |   fab_type             str        present=100.0%  missing=0
+2026-07-20 17:01:23 | INFO | __main__ |   monthly_wafer_capacity int64      present=100.0%  missing=0
+2026-07-20 17:01:23 | INFO | __main__ |   fab_started_year     int64      present=100.0%  missing=0
+2026-07-20 17:01:23 | INFO | __main__ | Numeric summary (for spread / outliers):
+2026-07-20 17:01:23 | INFO | __main__ | Constructing features (vectorized, none are derived from the target)
+2026-07-20 17:01:23 | INFO | __main__ | Added features: ['fab_size', 'process_node_category']
+2026-07-20 17:01:24 | INFO | __main__ | Train instances: 250
+2026-07-20 17:01:24 | INFO | __main__ | Test instances: 63
+2026-07-20 17:01:24 | INFO | __main__ | Test accuracy: 0.841
+2026-07-20 17:01:24 | INFO | __main__ | Per-class precision / recall / F1:
+2026-07-20 17:01:24 | INFO | __main__ | 
+              precision    recall  f1-score   support
+
+       Intel       0.58      0.88      0.70         8
+      Others       0.88      0.88      0.88        43
+        TSMC       1.00      0.67      0.80        12
+
+    accuracy                           0.84        63
+   macro avg       0.82      0.81      0.79        63
+weighted avg       0.87      0.84      0.84        63
+
+2026-07-20 17:01:24 | INFO | __main__ | Showing confusion matrix (rows = actual, cols = predicted)
+2026-07-20 17:01:24 | INFO | __main__ |   depth= 1  train=0.684  test=0.683
+2026-07-20 17:01:24 | INFO | __main__ |   depth= 2  train=0.720  test=0.730
+2026-07-20 17:01:24 | INFO | __main__ |   depth= 3  train=0.816  test=0.841
+2026-07-20 17:01:24 | INFO | __main__ |   depth= 4  train=0.880  test=0.873
+2026-07-20 17:01:24 | INFO | __main__ |   depth= 5  train=0.896  test=0.841
+2026-07-20 17:01:24 | INFO | __main__ |   depth= 6  train=0.920  test=0.825
+2026-07-20 17:01:24 | INFO | __main__ |   depth= 7  train=0.932  test=0.794
+2026-07-20 17:01:24 | INFO | __main__ |   depth= 8  train=0.944  test=0.794
+2026-07-20 17:01:24 | INFO | __main__ |   depth= 9  train=0.956  test=0.778
+2026-07-20 17:01:24 | INFO | __main__ |   depth=10  train=0.960  test=0.778
+2026-07-20 17:01:24 | INFO | __main__ |   depth=11  train=0.964  test=0.778
+2026-07-20 17:01:24 | INFO | __main__ |   depth=12  train=0.972  test=0.778
